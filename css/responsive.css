@@ -14,18 +14,17 @@
     gap: 1rem;
     padding: 0 10px;
   }
-  footer.footer .container {
+  footer.footer .row .container {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1rem;
   }
+
   .login {
     grid-template-columns: 0.6fr 1fr;
   }
 }
 
 @media (max-width: 768px) {
- 
-
   #hamburger-menu + .hamburger-menu-icon {
     display: initial;
   }

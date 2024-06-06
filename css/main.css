@@ -6,70 +6,7 @@ section {
   padding: 4.5rem 0 3rem;
 }
 
-/*home*/
-.home {
-  margin-top: 5rem;
-  background-image: url(../img/shore.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 440px;
-  border-radius: 1.5rem;
-  display: flex;
-  align-items: center;
-}
-.home-text {
-  padding-left: 35px;
-}
-.home-text h1 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
-  gap: 2rem;
-}
-.about-img img {
-  border-radius: 2rem 0 2rem 2rem;
-}
-.about-text span {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #2288ff;
-}
-.about-text h2 {
-  font-size: 1.7rem;
-}
-.about-text p {
-  font-size: 0.938rem;
-  margin: 1rem 0 1rem;
-}
-.about-text ul {
-  margin-bottom: 4%;
-}
-.about-img2 img {
-  border-radius: 3rem;
-  width: 68%;
-}
-.about-text2 {
-  padding-top: 14%;
-}
-.about-text2 span {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #2288ff;
-}
-.about-text2 h2 {
-  font-size: 1.7rem;
-}
-.about-text2 p {
-  font-size: 0.938rem;
-  margin: 1rem 0 1rem;
-}
+/* Ações */
 .acoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
@@ -107,42 +44,7 @@ section {
   font-size: 0.938rem;
   padding-bottom: 4%;
 }
-.pontos {
-  background: #fbfbfb;
-  border-radius: 2rem;
-}
-.pontos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-  gap: 3rem;
-  padding: 0 50px;
-}
-.pontos-container .box {
-  background: #fff;
-  padding: 10px;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 18px rgb(14 52 54/15%);
-}
-.pontos-container .box:hover {
-  transform: translateY(-10px);
-  transition: 0.5s;
-}
-.pontos-container .box img {
-  border-radius: 1rem;
-  height: 220px;
-  object-fit: cover;
-  object-position: center;
-}
-.pontos-container .text h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  float: right;
-}
-.pontos-container.box .content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
+
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -172,4 +74,102 @@ section {
   padding: 12px 34px;
   font-weight: 500;
   text-transform: uppercase;
-} 
+}
+/* Home */
+#home {
+  margin-top: 5rem;
+  background-image: url(../img/shore.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+
+#home h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Sobre nós */
+#sobre-nos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  gap: 2rem;
+}
+
+.section-w-image img {
+  border-radius: 2rem 0 2rem 2rem;
+}
+
+.section-w-image .content {
+  padding-top: 14%;
+  line-height: 25px;
+}
+
+.section-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #2288ff;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+/* Nossa solução */
+#nossa-solucao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  gap: 2rem;
+}
+
+/* Pontos */
+#pontos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 3rem;
+  padding: 0 50px;
+}
+
+/* Card */
+.card-photo {
+  background: #fff;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 18px rgb(14 52 54/15%);
+}
+
+.card-photo:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.card-photo img {
+  border-radius: 1rem;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-photo p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card-photo .row {
+  justify-content: space-between;
+}
+
+.card-photo .row > span {
+  font-weight: bold;
+}
+
+.card-photo .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
