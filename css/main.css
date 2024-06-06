@@ -10,21 +10,30 @@
   list-style: none;
   text-decoration: none;
 }
+
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
+
 body {
   color: #314862;
 }
+
 section {
   padding: 4.5rem 0 3rem;
 }
+
 .container {
   max-width: 1068px;
   margin-left: auto;
   margin-right: auto;
 }
-header {
+
+nav.navbar {
   display: block;
   width: 100%;
   background: #fff;
@@ -33,12 +42,14 @@ header {
   left: 0;
   z-index: 100;
 }
-.nav {
+
+nav.navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 35px;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -52,36 +63,23 @@ header {
   font-size: 24px;
   color: #2288ff;
 }
-.navbar {
+
+.nav-items {
   display: flex;
 }
-.navbar a {
-  padding: 8px 17px;
+
+.nav-items .item a {
+  margin-right: 20px;
   color: #314862;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
-.navbar a:hover {
+
+.nav-items .item:hover a {
   color: #2288ff;
 }
-#menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
-#menu {
-  display: none;
-}
-.btn {
-  padding: 8px 22px;
-  background: #2288ff;
-  color: #fff;
-  border-radius: 5rem;
-}
-.btn:hover {
-  color: #71bdd4;
-}
+
 /*home*/
 .home {
   margin-top: 5rem;
@@ -249,8 +247,9 @@ header {
   font-weight: 500;
   text-transform: uppercase;
 }
-.footer {
-  background: #2288ff;
+footer.footer {
+  padding: 4.5rem 0 3rem;
+  background-color: #2288ff;
   color: #fff;
   border-radius: 5rem 0 0 0;
 }

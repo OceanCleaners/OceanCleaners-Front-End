@@ -24,41 +24,52 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
+  .nav-items {
     padding: 10px 0;
   }
-  #menu-icon {
+
+  #hamburger-menu + .hamburger-menu-icon {
     display: initial;
   }
-  .navbar {
+
+  .nav-items {
     position: absolute;
     top: 100%;
     right: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    background: #192f6a;
-    text-align: center;
+    align-items: center;
+    background-color: #192f6a;
     clip-path: circle(0% at 100% 1%);
     transition: 0.6s;
+    padding: 40px;
   }
-  .navbar a {
+
+  .nav-items > .item a {
+    border-radius: 30px;
+    margin: 0;
     display: block;
-    margin: 1rem;
-    padding: 20px;
-    color: #fff;
-  }
-  .navbar a:hover {
-    background: #2288ff;
     color: #fff;
     transition: 0.2s;
   }
-  #menu:checked ~ .navbar {
+
+  .nav-items > li + li {
+    margin-top: 40px;
+  }
+
+  .nav-items > .item a:hover {
+    color: #2288ff;
+  }
+
+  #hamburger-menu:checked ~ .nav-items {
     clip-path: circle(144% at 100% 1%);
   }
+
   .about-text span {
     font-size: 0.9rem;
   }
+
   .about-text h2,
   .heading h2,
   .newsletter h2 {

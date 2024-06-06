@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--link CSS-->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!--icon-->
     <link rel="shortcut icon" href="img/icon.png" />
@@ -15,33 +16,31 @@
     <title>OceanCleaners</title>
   </head>
   <body>
-    <!--navbar-->
-    <header>
-      <div class="nav container">
-        <!--logo-->
-        <a href="index.html" class="logo"
-          ><i class="bx bx-home"></i>OceanCleaners</a
-        >
-        <!--icon do menu-->
-        <input type="checkbox" name="" id="menu" />
-        <label for="menu"><i class="bx bx-menu" id="menu-icon"></i></label>
-        <!--navlist-->
-        <ul class="navbar">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#acoes">Ações</a></li>
-          <li><a href="#pontos">Pontos</a></li>
-        </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo"><i class="bx bx-home"></i>OceanCleaners</a>
 
-        <!--botao de login-->
-        <a href="login.html" class="btn">Log In</a>
+        <!-- Menu responsivo -->
+        <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+        <label for="hamburger-menu" class="hamburger-menu-icon"
+          ><i class="bx bx-menu"></i
+        ></label>
+
+        <ul class="nav-items">
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#sobre">Sobre Nós</a></li>
+          <li class="item"><a href="#acoes">Ações</a></li>
+          <li class="item"><a href="#pontos">Pontos</a></li>
+          <li><a href="login.html" class="button">Login</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
+
     <!--home-->
     <section class="home container" id="home">
       <div class="home-text">
-        <h1>Juntos por um<br />oceano mais<br />limpo.</h1>
-        <a href="#" class="btn">Seja um voluntário</a>
+        <h1>Juntos por um<br />oceano mais<br />limpo</h1>
+        <a href="#" class="button">Seja um voluntário</a>
       </div>
     </section>
     <!--sobre nós-->
@@ -51,7 +50,7 @@
       </div>
       <div class="about-text">
         <span>Sobre Nós</span>
-        <h2>A poluição marítima<br />precisa de atenção.</h2>
+        <h2>A poluição marítima<br />precisa de atenção</h2>
         <p>
           A poluição dos oceanos prejudica ecossistemas, ameaça a vida marinha e
           afeta a população local.
@@ -64,7 +63,7 @@
         </ul>
         <a
           href="https://www.g20.org/pt-br/g20-social/grupos-de-engajamento/oceans-20"
-          class="btn"
+          class="button"
           >Saiba Mais</a
         >
       </div>
@@ -75,7 +74,7 @@
       </div>
       <div class="about-text2">
         <span>Nossa Solução</span>
-        <h2>Juntos podemos<br />mais.</h2>
+        <h2>Juntos podemos<br />mais</h2>
         <p>
           Nossa plataforma permite que pessoas do Brasil todo abram chamados e
           denunciem praias que precisam de atenção.
@@ -124,7 +123,7 @@
     </div>
     <!--pontos-->
     <div class="sistema-recompensa">
-      <h2>Sua ação é recompensada.</h2>
+      <h2>Sua ação é recompensada</h2>
       <p>
         Realize chamados ou se torne voluntário para registrar pontos.<br />Compartilhe
         sua ação, troque pontos acumulados por prêmios exclusivos.
@@ -137,12 +136,13 @@
         <img src="img/chamado.jpg" alt="pessoa acessando o site" />
         <h3>Abrir um chamado</h3>
         <div class="conteudo">
-          <div class="text">
-            <h3>15 pontos</h3>
-            <p>Brasil,BR</p>
-          </div>
           <div class="icon">
             <i class="bx bx-been-here"></i>
+            <span>Rio de Janeiro, RJ</span>
+          </div>
+
+          <div class="text">
+            <h3>15 pontos</h3>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <div class="conteudo">
           <div class="text">
             <h3>30 pontos</h3>
-            <p>Brasil,BR</p>
+            <p>Rio de Janeiro, RJ</p>
           </div>
           <div class="icon">
             <i class="bx bx-been-here"></i>
@@ -167,7 +167,7 @@
         <div class="conteudo">
           <div class="text">
             <h3>50 pontos</h3>
-            <p>Brasil,BR</p>
+            <p>Rio de Janeiro, RJ</p>
           </div>
           <div class="icon">
             <i class="bx bx-been-here"></i>
@@ -195,7 +195,7 @@
         <div class="conteudo">
           <div class="text">
             <h3>10 pontos</h3>
-            <p>Brasil,BR</p>
+            <p>Rio de Janeiro, RJ</p>
           </div>
           <div class="icon">
             <i class="bx bx-been-here"></i>
@@ -214,15 +214,18 @@
           placeholder="seuemail@gmail.com"
           required
         />
-        <input type="submit" value="Enviar" class="btn" />
+        <input type="submit" value="Enviar" class="button" />
       </form>
     </section>
+
     <!--footer-->
-    <section class="footer">
+    <footer class="footer">
       <div class="footer-container container">
-        <h2>OceanCleaners</h2>
+        <h1>OceanCleaners</h1>
+
         <div class="footer-box">
           <h3>Contato</h3>
+
           <a href="mailto:contato@oceancleaners.com.br" target="_blank"
             >contato@oceancleaners.com.br</a
           >
@@ -230,6 +233,7 @@
         </div>
         <div class="footer-box">
           <h3>Endereço</h3>
+
           <a
             href="http://maps.google.com/?q=Av. Paulista, São Paulo"
             target="_blank"
@@ -237,14 +241,17 @@
             >Av. Paulista, São Paulo</a
           >
         </div>
-        <div class="social">
+        <div class="footer-box">
           <h3>Links</h3>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
+
+          <div class="social">
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
     <div class="direitos">
       <p>© 2024 Ocean Cleaners - Todos os direitos reservados.</p>
     </div>
