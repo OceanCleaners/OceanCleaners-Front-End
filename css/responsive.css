@@ -9,13 +9,9 @@
   section {
     padding: 4rem 0 3rem;
   }
-  .pontos-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 1rem;
-    padding: 0 10px;
-  }
+
   footer.footer .row .container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
     gap: 1rem;
   }
 
@@ -63,28 +59,14 @@
     clip-path: circle(144% at 100% 1%);
   }
 
-  .about-text span {
-    font-size: 0.9rem;
-  }
-
-  .about-text h2,
-  .heading h2,
   .newsletter h2 {
     font-size: 1.4rem;
   }
 }
 
 @media (max-width: 638px) {
-  .about-text {
-    text-align: center;
-  }
-  .about-img {
-    order: 2;
-  }
   .login {
     grid-template-columns: 0.8fr 1fr;
-  }
-  .login {
     margin-top: 3rem;
   }
 }
@@ -106,17 +88,15 @@
   .home-text h1 {
     font-size: 1.7rem;
   }
-  .about-text h2,
-  .heading h2,
+
   .newsletter h2 {
     font-size: 1.2rem;
   }
-  .pontos-container {
-    padding: 0;
-  }
+
   .newsletter #email-box {
     width: 140px;
   }
+
   footer.footer {
     border-radius: 3rem 0 0 0;
   }

@@ -7,42 +7,30 @@ section {
 }
 
 /* Ações */
-.acoes {
+#acoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   gap: 2.4rem;
 }
-.acoes .box {
+
+.card {
   padding: 20px;
   background: #fff;
   box-shadow: 2px 2px 18px rgb(14 52 54/15%);
   text-align: center;
   border-radius: 2rem;
 }
-.acoes .box:hover {
+.card:hover {
   background: #2288ff;
   color: #fff;
   transition: 0.4s all linear;
 }
-.acoes .box .bx {
+.card .bx {
   padding: 10px;
   border-radius: 50%;
   background: #f6f6fe;
   color: #2288ff;
   font-size: 20px;
-}
-/*pontos*/
-.sistema-recompensa {
-  text-align: center;
-}
-
-.sistema-recompensa h2 {
-  font-size: 1.7rem;
-  padding-top: 4%;
-}
-.sistema-recompensa p {
-  font-size: 0.938rem;
-  padding-bottom: 4%;
 }
 
 .newsletter {
@@ -129,10 +117,18 @@ section {
 
 /* Pontos */
 #pontos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pontos .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   gap: 3rem;
   padding: 0 50px;
+  width: 100%;
 }
 
 /* Card */

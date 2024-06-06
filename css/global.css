@@ -127,13 +127,14 @@ footer.footer .row {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
+  gap: 1rem;
 }
 
 footer.footer .row .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-  gap: 2rem;
-  padding: 3rem 3rem 0 3rem;
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ flex-wrap: wrap;
 }
 
 footer.footer .col a {
