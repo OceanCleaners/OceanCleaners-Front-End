@@ -1,13 +1,43 @@
-#hamburger-menu {
-  font-size: 24px;
-  display: none;
+/* Reset */
+@import url(./fonts.css);
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
-#hamburger-menu + .hamburger-menu-icon {
-  display: none;
-  cursor: pointer;
+ul {
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+/* Botão Genérico */
 .button {
   padding: 8px 22px;
   border-radius: 5rem;
@@ -18,5 +48,116 @@
 }
 
 .button:hover {
-  opacity: .5;
+  opacity: 0.5;
+}
+
+/* Navbar */
+nav.navbar {
+  display: block;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+nav.navbar .container .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #314862;
+  text-transform: uppercase;
+}
+
+nav.navbar .container .logo .bx {
+  font-size: 24px;
+  color: #2288ff;
+}
+
+nav.navbar .container .nav-items {
+  display: flex;
+}
+
+.nav-items .item a {
+  margin-right: 20px;
+  color: #314862;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-items .item:hover a {
+  color: #2288ff;
+}
+
+#hamburger-menu {
+  font-size: 24px;
+  display: none;
+}
+
+#hamburger-menu + .hamburger-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Footer  */
+footer.footer {
+  background-color: #2288ff;
+  color: #fff;
+  border-radius: 5rem 0 0 0;
+
+  padding: 4.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer.footer .row {
+  align-items: center;
+}
+
+footer.footer .row .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2rem;
+  padding: 3rem 3rem 0 3rem;
+}
+
+footer.footer .col a {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+footer.footer .col a:hover {
+  color: #314862;
+}
+
+footer.footer .col .social a {
+  font-size: 21px;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+footer.footer .col .social a:hover {
+  color: #192f6a;
+}
+
+footer.footer .copyright {
+  margin: 20px 0;
+  text-align: center;
+  color: #fff;
+  background: #2288ff;
+  font-size: 0.7rem;
 }
