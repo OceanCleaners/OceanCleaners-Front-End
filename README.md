@@ -36,3 +36,12 @@ Se trata da avaliação semestral (Global Solution) para os componentes `Front-e
 - Alex Maia (RM 557356)
 - Marcos Ferreira (RM 556228)
 - Mayla Maricato (RM 557754)
+
+# Imagens do Projeto
+O projeto também pode ser acessado [clicando aqui](https://oceancleaners.github.io/OceanCleaners-Front-End/)
+
+### Página Inicial
+<img src="docs/index-preview.png" >
+
+### Registro
+<img src="docs/registro-preview.png" >
