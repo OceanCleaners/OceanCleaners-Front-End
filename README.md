@@ -29,7 +29,7 @@ Na pasta do repositório, abra o arquivo index.html
 
 # Motivação
 
-Se trata da avaliação semestral (Global Solution) para os componentes `Front-end Design` e `Web Development`, ministrados pelos professor Lucas Silva e Caio Oliveira, respectivamente.
+Se trata da avaliação semestral (Global Solution) para os componentes `Front-end Design` e `Web Development`, ministrados pelos professores Lucas Silva e Caio Oliveira, respectivamente.
 
 # Membros
 
