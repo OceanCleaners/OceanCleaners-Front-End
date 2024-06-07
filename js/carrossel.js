@@ -1,7 +1,6 @@
 const carrosselElement = document.querySelector('#home.carrossel');
 const prevBtn = document.getElementById('carrossel-prev');
 const nextBtn = document.getElementById('carrossel-next');
-const imagemBase = 'carrossel';
 const totalImages = 5;
 
 document.addEventListener('DOMContentLoaded', () => {
