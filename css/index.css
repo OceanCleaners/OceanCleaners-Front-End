@@ -6,6 +6,32 @@ section {
   padding: 4.5rem 0 3rem;
 }
 
+.seta-esquerda,
+.seta-direita {
+  background: #fff;
+  position: absolute;
+  top: 70%;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.seta-direita:hover,
+.seta-esquerda:hover {
+  background: #000;
+  color: #fff;
+}
+.seta-esquerda {
+  left: 9em;
+}
+.seta-direita {
+  right: 9em;
+}
+
 /* Ações */
 #acoes {
   display: grid;
@@ -115,6 +141,33 @@ section {
   gap: 2rem;
 }
 
+#nossa-solucao h3{
+  font-weight: 500;
+}
+#nossa-solucao span{
+  font-weight: 600;
+  color: #2288ff;
+}
+#publico {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, auto));
+  gap: 6rem;
+}
+
+#publico h3{
+  font-weight: 500;
+}
+
+#publico img { 
+    border-radius: 2rem 0 2rem 2rem;
+}
+
+#publico span{
+  color: #2288ff;
+  font-weight: 600;
+}
+
+
 /* Pontos */
 #pontos {
   display: flex;
@@ -169,3 +222,4 @@ section {
   justify-content: space-between;
   margin-top: 2rem;
 }
+
