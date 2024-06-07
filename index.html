@@ -33,21 +33,20 @@
           <li class="item"><a href="#nossa-solucao">Nossa solução</a></li>
           <li class="item"><a href="#acoes">Ações</a></li>
           <li class="item"><a href="#pontos">Pontos</a></li>
-          <li><a href="login.html" class="button">Login</a></li>
+          <li><a href="registro.html" class="button">Registro</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="container">
       <!-- Home -->
-      </section>
-      <section id="home">
-          <div class="seta-esquerda">
-            <i class='bx bx-left-arrow-alt'></i>
-          </div>
-          <div class="seta-direita">
-            <i class='bx bx-right-arrow-alt' ></i>
-          </div>
+      <section id="home" class="carrossel">
+        <button type="button" class="seta-esquerda" id="carrossel-prev">
+          <i class="bx bx-left-arrow-alt"></i>
+        </button>
+        <button type="button" class="seta-direita" id="carrossel-next">
+          <i class="bx bx-right-arrow-alt"></i>
+        </button>
         <div class="home-text">
           <h1>Juntos por um<br />oceano mais<br />limpo</h1>
           <a href="#" class="button">Seja um voluntário</a>
@@ -104,7 +103,11 @@
             denunciem praias que precisam de atenção.
           </h3>
 
-          <h4>Tecnologias ultilizadas: <br> -Next <br> -MongoDB.</h4>
+          <h4>
+            Tecnologias ultilizadas: <br />
+            -Next <br />
+            -MongoDB.
+          </h4>
 
           <h3>
             Organizações de limpeza serão iniciadas para atender aos chamados.
@@ -115,22 +118,33 @@
             permitirá benefícios exclusivos para aqueles em movimento por um
             futuro melhor.
           </h3>
-          <h4><span> 
-            Contamos com você para se voluntariar através do site ou aplicativo,
-            e ajudar a salvar nossos oceanos!
-          </span>
+          <h4>
+            <span>
+              Contamos com você para se voluntariar através do site ou
+              aplicativo, e ajudar a salvar nossos oceanos!
+            </span>
           </h4>
         </div>
       </section>
-    <!-- Público -->  
-    <section id="publico">
-      <h3> <span>Quem é beneficiado?</span> <br> Combater a poluição dos oceanos e praias é crucial para beneficiar tanto a <span> população costeira </span> quanto os <span> turistas. </span> <br> A preservação desses ecossistemas marinhos protege: <br> - a vida marinha <br> - os habitats naturais <br> - a saúde pública <br> - o turismo sustentável. <br> </h3>
-      <img
+      <!-- Público -->
+      <section id="publico">
+        <h3>
+          <span>Quem é beneficiado?</span> <br />
+          Combater a poluição dos oceanos e praias é crucial para beneficiar
+          tanto a <span> população costeira </span> quanto os
+          <span> turistas. </span> <br />
+          A preservação desses ecossistemas marinhos protege: <br />
+          - a vida marinha <br />
+          - os habitats naturais <br />
+          - a saúde pública <br />
+          - o turismo sustentável. <br />
+        </h3>
+        <img
           src="img/turistas.jpg"
           style="width: 84%"
           alt="Imagem de turistas"
-      />
-    </section>
+        />
+      </section>
       <!-- Ações -->
       <section id="acoes">
         <div class="card">
@@ -158,7 +172,7 @@
           </p>
         </div>
       </section>
-      
+
       <!-- Pontos -->
       <section id="pontos">
         <h2>Sua ação é recompensada</h2>
@@ -247,10 +261,10 @@
       <!-- Newsletter -->
       <section class="newsletter container">
         <h2>Entre em contato</h2>
-        <form>
+        <form id="newsletter-form">
           <input
             type="email"
-            id="email-box"
+            id="newsletter-email"
             placeholder="seuemail@gmail.com"
             required
           />
@@ -298,6 +312,8 @@
         <p>© 2024 Ocean Cleaners - Todos os direitos reservados.</p>
       </div>
     </footer>
+
+    <script src="js/newsletter.js"></script>
+    <script src="js/carrossel.js"></script>
   </body>
 </html>
-

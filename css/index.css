@@ -6,11 +6,16 @@ section {
   padding: 4.5rem 0 3rem;
 }
 
+.carrossel {
+  position: relative;
+}
+
 .seta-esquerda,
 .seta-direita {
+  border: none;
   background: #fff;
   position: absolute;
-  top: 70%;
+  top: 50%;
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
@@ -20,16 +25,18 @@ section {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .seta-direita:hover,
 .seta-esquerda:hover {
   background: #000;
   color: #fff;
 }
+
 .seta-esquerda {
-  left: 9em;
+  left: 20px;
 }
 .seta-direita {
-  right: 9em;
+  right: 20px;
 }
 
 /* Ações */
@@ -81,7 +88,7 @@ section {
   outline: none;
   font-size: 1rem;
 }
-.newsletter #email-box {
+.newsletter #newsletter-email {
   width: 280px;
 }
 .newsletter .btn {
@@ -92,7 +99,7 @@ section {
 /* Home */
 #home {
   margin-top: 5rem;
-  background-image: url(../img/shore.jpg);
+  background-image: url(../img/carrossel-0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -100,13 +107,14 @@ section {
   border-radius: 1.5rem;
   display: flex;
   align-items: center;
-  padding-left: 35px;
+  padding-left: 100px;
 }
 
 #home h1 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-shadow: #0000005e -1px 1px 8px;
 }
 
 /* Sobre nós */
@@ -141,10 +149,10 @@ section {
   gap: 2rem;
 }
 
-#nossa-solucao h3{
+#nossa-solucao h3 {
   font-weight: 500;
 }
-#nossa-solucao span{
+#nossa-solucao span {
   font-weight: 600;
   color: #2288ff;
 }
@@ -154,19 +162,18 @@ section {
   gap: 6rem;
 }
 
-#publico h3{
+#publico h3 {
   font-weight: 500;
 }
 
-#publico img { 
-    border-radius: 2rem 0 2rem 2rem;
+#publico img {
+  border-radius: 2rem 0 2rem 2rem;
 }
 
-#publico span{
+#publico span {
   color: #2288ff;
   font-weight: 600;
 }
-
 
 /* Pontos */
 #pontos {
@@ -222,4 +229,3 @@ section {
   justify-content: space-between;
   margin-top: 2rem;
 }
-
